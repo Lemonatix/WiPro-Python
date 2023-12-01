@@ -1,0 +1,11 @@
+def polyval(coefficients, x):
+    result = 0
+    for i, coeffs in enumerate(coefficients):
+        result += coeffs * (x ** i)
+    return result
+
+coefficients = [1, 0, -0.4] 
+x = 2 
+print(polyval(coefficients, x)) 
+
+

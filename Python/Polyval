@@ -1,0 +1,5 @@
+def polyval(coefficients,x):
+    f=0
+    for i in range(len(coefficients)) :
+        f=f+coefficients[i]* x**i
+    return f

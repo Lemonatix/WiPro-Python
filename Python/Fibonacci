@@ -1,0 +1,21 @@
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+print(fibonacci(10))  
+
+def largest_fibonacci_less_than(m):
+    if m < 1:
+        return 0
+
+    fib1, fib2 = 0, 1
+    while True:
+        fib_next = fib1 + fib2
+        if fib_next >= m:
+            return fib2
+        fib1, fib2 = fib2, fib_next
+
+print(largest_fibonacci_less_than(100)) 
